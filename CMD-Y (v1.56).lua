@@ -2999,7 +2999,7 @@ local function ZCFUV_fake_script() -- CMDY.CMDY.LocalScript
 				elseif v.Parent.Parent.Name == "TabsContainer" and v:IsA("TextButton") then
 					v.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 				elseif v.Parent.Parent.Parent.Name == "TabsContainer" and v.Name == "ColorFrame" then
-					continue
+					-- continue
 				elseif v.Parent.Parent.Name == "TabsContainer" and v:IsA("Frame") then
 					v.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 				elseif v.Parent.Parent.Name == "TabsContainer" and v:IsA("TextBox") then
@@ -3027,7 +3027,7 @@ local function ZCFUV_fake_script() -- CMDY.CMDY.LocalScript
 				elseif v.Parent.Parent.Name == "TabsContainer" and v:IsA("TextButton") then
 					v.BackgroundColor3 = Color3.new(R/3, G/3, B/3)
 				elseif v.Parent.Parent.Parent.Name == "TabsContainer" and v.Name == "ColorFrame" then
-					continue
+					-- continue
 				elseif v.Parent.Parent.Name == "TabsContainer" and v:IsA("Frame") then
 					v.BackgroundColor3 = Color3.new(R/4, G/4, B/4)
 				elseif v.Parent.Parent.Name == "TabsContainer" and v:IsA("TextBox") then
@@ -4620,7 +4620,7 @@ local function ZCFUV_fake_script() -- CMDY.CMDY.LocalScript
 		local function lenTbl(tbl)
 			local num = 0
 			for i,v in next, tbl do
-				num += 1
+				num = num + 1
 			end
 			return num
 		end
@@ -6387,7 +6387,7 @@ local function ZCFUV_fake_script() -- CMDY.CMDY.LocalScript
 		for _,v in pairs(Map["Obby Box"]:GetChildren()) do
 			if allclear() == false then break end
 			if v ~= nil and v.CFrame == CFrame.new(ogcframes[v.Name][1],ogcframes[v.Name][2],ogcframes[v.Name][3],ogcframes[v.Name][4],ogcframes[v.Name][5],ogcframes[v.Name][6],ogcframes[v.Name][7],ogcframes[v.Name][8],ogcframes[v.Name][9],ogcframes[v.Name][10],ogcframes[v.Name][11],ogcframes[v.Name][12]) then
-				continue
+				-- continue
 			else
 				if v ~= nil then
 					moved = true
@@ -6400,7 +6400,7 @@ local function ZCFUV_fake_script() -- CMDY.CMDY.LocalScript
 		for _,v in pairs(Map.Obby:GetChildren()) do
 			if allclear() == false then break end
 			if v ~= nil and v.CFrame == CFrame.new(ogcframes[v.Name][1],ogcframes[v.Name][2],ogcframes[v.Name][3],ogcframes[v.Name][4],ogcframes[v.Name][5],ogcframes[v.Name][6],ogcframes[v.Name][7],ogcframes[v.Name][8],ogcframes[v.Name][9],ogcframes[v.Name][10],ogcframes[v.Name][11],ogcframes[v.Name][12]) then
-				continue
+				-- continue
 			else
 				if v ~= nil then
 					moved = true
